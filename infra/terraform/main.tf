@@ -35,6 +35,6 @@ resource "helm_release" "hello-world" {
 
   set {
     name  = "replicaCount"
-    value = "3"
+    value = "1"
   }
 }
