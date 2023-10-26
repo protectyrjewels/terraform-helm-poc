@@ -1,5 +1,22 @@
 A PoC for using [helm](https://github.com/helm/helm) with [terraform](https://github.com/hashicorp/terraform).
 
+## Installation
+
+To experiment with AWS services without having to use real AWS services, we are going to use [Localstack](https://github.com/localstack/localstack) for local testing.
+
+```bash
+python3 -m pip install terraform-local
+```
+
+Now instead of using `terraform`, you can use `tflocal`:
+
+```bash
+tflocal init
+tflocal apply
+```
+
+## Directory Structure
+
 ```
 .
 ├── LICENSE

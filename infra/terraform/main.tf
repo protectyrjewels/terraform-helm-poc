@@ -8,7 +8,15 @@ terraform {
       source  = "hashicorp/helm"
       version = "~> 2.11.0"
     }
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.22.0"
+    }
   }
+}
+
+resource "aws_s3_bucket" "test-bucket" {
+  bucket = "my-bucket"
 }
 
 provider "kubernetes" {
