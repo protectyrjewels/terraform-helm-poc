@@ -1,5 +1,8 @@
 replicaCount: 1
 
+aws_s3:
+  endpoint: "http://127.0.0.1:4566"
+
 image:
   repository: protectyrjewels/hello-world
   pullPolicy: IfNotPresent
