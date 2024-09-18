@@ -7,6 +7,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fastify": "^4.24.3"
+    "fastify": "^4.28.1"
   }
 }
